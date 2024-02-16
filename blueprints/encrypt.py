@@ -21,6 +21,7 @@ def encrypt_message(message: bytes, public_key: bytes) -> bytes:
     )
     return encrypted_message
 
+# Route to handle encryption functionality
 @encrypt_blueprint.route('/encrypt/', methods=['GET', 'POST'])
 def encrypt():
     if request.method == 'POST':
