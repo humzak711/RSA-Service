@@ -22,6 +22,7 @@ def decrypt_message(cipher_text: bytes, private_key: bytes) -> str:
     )
     return decrypted_message.decode()
 
+# Route to handle decryption functionality
 @decrypt_blueprint.route('/decrypt/', methods=['GET', 'POST'])
 def decrypt():
     if request.method == 'POST':
