@@ -2,3 +2,4 @@ flask
 typing
 cryptography
 base64
+hashlib
