@@ -2,7 +2,7 @@ from flask import render_template, Blueprint
 
 index_blueprint = Blueprint('index', __name__)
 
-
+# Basic homepage
 @index_blueprint.route('/')
 @index_blueprint.route('/home/')
 def index():
